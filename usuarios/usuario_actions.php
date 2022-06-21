@@ -15,3 +15,4 @@ header("Location: ../index.html");
     $_SESSION['msg'] = "<p style='color:red;'>Usuário não foi cadastrado com sucesso</p>";
     header("Location: ../index.html");
     }
+    

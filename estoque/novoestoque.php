@@ -5,7 +5,7 @@
 <title>CRUD - Cadastrar</title>
 </head>
 <body>
-<h1>Retirar pizza</h1>
+<h1>Cadastrar produto</h1>
 
 
 <?php
@@ -15,16 +15,22 @@ unset($_SESSION['msg']);
 }
 ?>
 
-<form method="POST" action="retirar_pedido.php">
-
-<label>id_usuario: </label>
-<input type="numeber" name="id_usuario" placeholder="Digite o id do usuario" ><br><br>
+<form method="POST" action="addestoque.php">
 
 <label>Id_sabor: </label>
 <input type="numeber" name="id_sabor" placeholder="Digite o id do sabor"><br><br>
 
 <label>quantidade: </label>
 <input type="numeber" name="quantidade" placeholder="Digite a quantidade"><br><br>
+
+<label>notaFiscal: </label>
+<input type="numeber" name="notaFiscal" placeholder="Digite o numero da nota fiscal"><br><br>
+
+<label>valorUnitario: </label>
+<input type="numeber" name="valorUnitario" placeholder="Digite o valor unitário"><br><br>
+
+<label>dataCompra: </label>
+<input type="date" name="dataCompra" placeholder="Digite a data de compra"><br><br>
 
 <input type="submit" value="Cadastrar">
 </form>

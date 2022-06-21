@@ -15,13 +15,19 @@ unset($_SESSION['msg']);
 }
 ?>
 
-<form method="POST" action="sorteio.php">
+<form method="POST" action="resultadosorteio.php">
 
 <label>Quantidade: </label>
 <input type="numeber" name="qtd" placeholder="Digite a quantidade de vencedores:" ><br><br>
 <input type="submit" value="Enviar">
+
 </form>
 
+Numero de usuários cadastrado no sistema: 
+<?php 
+include_once("sorteio_actions.php");
+echo get_max();
+?>
 
 </body>
 </html>

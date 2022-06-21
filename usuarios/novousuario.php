@@ -20,7 +20,7 @@ unset($_SESSION['msg']);
 }
 ?>
 
-<form method="POST" action="adicionar_usuario.php">
+<form method="POST" action="usuario_actions.php">
 
 <label>Nome: </label>
 <input type="text" name="nome" placeholder="Digite o nome completo"><br><br>
