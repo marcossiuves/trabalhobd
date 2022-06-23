@@ -3,6 +3,7 @@
 <head>
 <meta charset="utf-8">
 <title>CRUD - Cadastrar</title>
+<link rel="stylesheet" href="novoestoque.css">
 </head>
 <body>
 <h1>Cadastrar produto</h1>
@@ -15,24 +16,24 @@ unset($_SESSION['msg']);
 }
 ?>
 
-<form method="POST" action="addestoque.php">
+<form class="form" method="POST" action="addestoque.php">
 
-<label>Id_sabor: </label>
-<input type="numeber" name="id_sabor" placeholder="Digite o id do sabor"><br><br>
+	<label class="label">Id_sabor: </label>
+	<input class="input" type="number" name="id_sabor" placeholder="Digite o id do sabor"><br><br>
 
-<label>quantidade: </label>
-<input type="numeber" name="quantidade" placeholder="Digite a quantidade"><br><br>
+	<label class="label">quantidade: </label>
+	<input class="input" type="number" name="quantidade" placeholder="Digite a quantidade"><br><br>
 
-<label>notaFiscal: </label>
-<input type="numeber" name="notaFiscal" placeholder="Digite o numero da nota fiscal"><br><br>
+	<label class="label">notaFiscal: </label>
+	<input class="input" type="number" name="notaFiscal" placeholder="Digite o numero da nota fiscal"><br><br>
 
-<label>valorUnitario: </label>
-<input type="numeber" name="valorUnitario" placeholder="Digite o valor unitário"><br><br>
+	<label class="label">valorUnitario: </label>
+	<input class="input" type="number" name="valorUnitario" placeholder="Digite o valor unitário"><br><br>
 
-<label>dataCompra: </label>
-<input type="date" name="dataCompra" placeholder="Digite a data de compra"><br><br>
+	<label class="label">dataCompra: </label>
+	<input class="input" type="date" name="dataCompra" placeholder="Digite a data de compra"><br><br>
 
-<input type="submit" value="Cadastrar">
+	<input class="input-submit" type="submit" value="Cadastrar">
 </form>
 </body>
 </html>

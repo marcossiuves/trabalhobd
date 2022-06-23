@@ -8,6 +8,7 @@ session_start();
 <head>
 <meta charset="utf-8">
 <title>CRUD - Cadastrar</title>
+<link rel="stylesheet" href="novousuario.css">
 </head>
 <body>
 <h1>Cadastrar Usuário</h1>
@@ -20,22 +21,22 @@ unset($_SESSION['msg']);
 }
 ?>
 
-<form method="POST" action="usuario_actions.php">
+<form class="form" method="POST" action="usuario_actions.php">
 
-<label>Nome: </label>
-<input type="text" name="nome" placeholder="Digite o nome completo"><br><br>
+<label class="label">Nome: </label>
+<input class="input" type="text" name="nome" placeholder="Digite o nome completo"><br><br>
 
-<label>Cpf: </label>
-<input type="text" name="cpf" placeholder="Digite o seu cpf"><br><br>
+<label class="label">Cpf: </label>
+<input class="input" type="text" name="cpf" placeholder="Digite o seu cpf"><br><br>
 
-<label>E-mail: </label>
-<input type="email" name="email" placeholder="Digite o seu melhor e-mail"><br><br>
+<label class="label">E-mail: </label>
+<input class="input" type="email" name="email" placeholder="Digite o seu melhor e-mail"><br><br>
 
-<label>Senha: </label>
-<input type="password" name="senha" placeholder="Cadastre uma senha"><br><br>
+<label class="label">Senha: </label>
+<input class="input" type="password" name="senha" placeholder="Cadastre uma senha"><br><br>
 
 
-<input type="submit" value="Cadastrar">
+<input class="input" type="submit" value="Cadastrar">
 </form>
 </body>
 </html>
