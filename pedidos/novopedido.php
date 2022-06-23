@@ -27,6 +27,9 @@ unset($_SESSION['msg']);
 	<label class="label">quantidade: </label>
 	<input class="input" type="numeber" name="quantidade" placeholder="Digite a quantidade"><br><br>
 
+	<label class="label">Lote: </label>
+	<input class="input" type="numeber" name="lote" placeholder="Digite o lote"><br><br>
+
 	<input class="input" type="submit" value="Cadastrar">
 </form>
 </body>
