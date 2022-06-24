@@ -8,30 +8,32 @@ body {
 	align-items: center;
 	justify-content: center;
 	flex-direction: column;
-	background: linear-gradient(to bottom right, rgba(250, 50, 50, 0.5), rgba(50, 150, 250, 0.5)),
-		linear-gradient(to bottom left, blue 30px, transparent 150px);
+	background-image: url("../pizza3.jpg");
+	background-repeat: no-repeat;
+	background-size: 100%;
 }
 
-.t1 {
-	
-}
+
+
+
 h1 {
 	width: fit-content;
 	height: fit-content;
-	background-color: white;
 	border-radius: 10px;
+	border: 1px solid white;
 	padding: 10px;
-	/* background: linear-gradient(to bottom right, rgba(250, 50, 50, 0.5), rgba(50, 150, 250, 0.5)),
-		linear-gradient(to bottom left, blue 30px, transparent 150px); */
-
+	color: white;
 }
 
 .form {
 	width: fit-content;
 	height: fit-content;
-	background-color: white;
+	/* background-color: white; */
 	border-radius: 10px;
 	padding: 10px;
+	border-width: 1px;
+	border-style: solid;
+	border-color: white;
 }
 
 .label {
@@ -40,6 +42,7 @@ h1 {
 	font-style: italic;
 	border-radius: 10px;
 	height: 30px;
+	color: white;
 }
 
 .input {
@@ -47,19 +50,31 @@ h1 {
 	padding: 12px 20px;
 	margin: 8px 0;
 	box-sizing: border-box;
-	border: 3px solid #ccc;
+	border: 1px solid rgb(0, 0, 0);
 	border-radius: 10px;
 	-webkit-transition: 0.5s;
 	transition: 0.5s;
 	outline: none;
+
 }
 
 .input:hover {
-	background-color: #dad5ff;
+	background-color: black;
+	border: 1px solid rgb(255, 255, 255);
 }
 
 .input:focus {
-	border: 3px solid #555;
+	border: 1px solid rgb(255, 255, 255);
+	background-color: black;
+	color: white;
+}
+
+.input:hover::placeholder {
+	color: white;
+}
+
+.input:focus::placeholder {
+	color: white;
 }
 
 .input-submit {
@@ -69,9 +84,12 @@ h1 {
 	border-radius: 10px;
 	transition: 0.5s;
 	outline: none;
+	background-color: black;
+	color: white;
 }
 
 .input-submit:hover {
 	cursor: grab;
-	background-color: #dad5ff;
+	background-color: white;
+	color: black;
 }

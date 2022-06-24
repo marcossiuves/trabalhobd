@@ -8,16 +8,37 @@ body {
 	align-items: center;
 	justify-content: center;
 	flex-direction: row;
-	background: linear-gradient(to bottom right, rgba(250, 50, 50, 0.5), rgba(50, 150, 250, 0.5)),
-		linear-gradient(to bottom left, blue 30px, transparent 150px);
+	/* background: linear-gradient(to bottom right, rgba(250, 50, 50, 0.5), rgba(50, 150, 250, 0.5)),
+		linear-gradient(to bottom left, blue 30px, transparent 150px); */
+	background-image: url("./pizza3.jpg");
+	background-repeat: no-repeat;
+	background-size: 100%;
 }
+
+
+.organize {
+	width: fit-content;
+	height: fit-content;
+	/* background-color: white; */
+	border-radius: 10px;
+	padding: 10px;
+	border-width: 1px;
+	border-style: solid;
+	border-color: white;
+}
+
 
 a {
 	width: fit-content;
 	height: fit-content;
-	background-color: white;
-	border-radius: 10px;
+	color: white;
 	padding: 10px;
 	/* background: linear-gradient(to bottom right, rgba(250, 50, 50, 0.5), rgba(50, 150, 250, 0.5)),
 		linear-gradient(to bottom left, blue 30px, transparent 150px); */
+}
+
+a:hover {
+	color: black;
+	background-color: rgb(255, 255, 255);
+	border-radius: 10px;
 }

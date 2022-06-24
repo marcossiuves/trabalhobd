@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <title>CRUD - Cadastrar</title>
-<link rel="stylesheet" href="novoestoque.css">
+<link rel="stylesheet" href="novoestoque.css"/>
 </head>
 <body>
 <h1>Cadastrar produto</h1>

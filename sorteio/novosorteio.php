@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <title>CRUD - Cadastrar</title>
-<link rel="stylesheet" href="novosorteio.css">
+<link rel="stylesheet" href="novosorteio.css"/>
 </head>
 <body>
 <h1>Sorteio</h1>
@@ -24,11 +24,11 @@ unset($_SESSION['msg']);
 
 </form>
 
-<h1>Numero de usuários cadastrado no sistema: 
+<h2>Numero de usuários cadastrado no sistema: 
 <?php 
 include_once("sorteio_actions.php");
 echo get_max();
 ?>
-</h1>
+</h2>
 </body>
 </html>

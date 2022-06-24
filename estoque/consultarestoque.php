@@ -9,9 +9,11 @@
     <title>Document</title>
 </head>
 <body>
-    <?php 
+   <table>
+   <?php 
         include("estoque_actions.php");
         consultar_estoque();
     ?>
+   </table>
 </body>
 </html>

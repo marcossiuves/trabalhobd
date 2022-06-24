@@ -19,16 +19,19 @@ function consultar_estoque(){
 
     $stmt = $conn -> prepare("select * from estoquePizza right join saboresPizza on estoquePizza.id_sabor = saboresPizza.id_sabor");
     $stmt->execute();
-    $result = $stmt->get_result();
-    
-    if($row = $result->fetch_assoc()) {
-        echo "<pclass = \"t1\" >id: = $row[id_sabor], sabor: $row[sabor], lote: $row[lote], preço:$row[preco], data cadastro: $row[dataCadastro], data compra: $row[dataCompra], numero nota fiscal: $row[n_notaFiscal], quantidade em estoque: $row[quantidade_estoque], preco de compra(un): $row[preco_compra_un] <br></p>";
+    $result = $stmt->get_result();   
+       
          while ($row = $result->fetch_assoc()) {
-            echo "id: = $row[id_sabor], sabor: $row[sabor], lote: $row[lote], preço:$row[preco], data cadastro: $row[dataCadastro], data compra: $row[dataCompra], numero nota fiscal: $row[n_notaFiscal], quantidade em estoque: $row[quantidade_estoque], preco de compra(un): $row[preco_compra_un] <br>";
+            echo "<tr><td>$row[id_sabor]</td> 
+            <td>$row[sabor]</td> 
+            <td>$row[lote]</td>
+            <td>$row[preco]</td> 
+            <td>$row[dataCadastro]</td>
+            <td>$row[dataCompra]</td>
+            <td>$row[n_notaFiscal]</td>
+            <td>$row[quantidade_estoque]</td>
+            <td>$row[preco_compra_un] </td></tr>";
         }
-     
-        } else {
-             echo "Algo deu errado!";
-        }     
-} 
+        
+}
 
