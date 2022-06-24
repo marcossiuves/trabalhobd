@@ -22,7 +22,7 @@ function consultar_estoque(){
     $result = $stmt->get_result();
     
     if($row = $result->fetch_assoc()) {
-        echo "id: = $row[id_sabor], sabor: $row[sabor], lote: $row[lote], preço:$row[preco], data cadastro: $row[dataCadastro], data compra: $row[dataCompra], numero nota fiscal: $row[n_notaFiscal], quantidade em estoque: $row[quantidade_estoque], preco de compra(un): $row[preco_compra_un] <br>";
+        echo "<pclass = \"t1\" >id: = $row[id_sabor], sabor: $row[sabor], lote: $row[lote], preço:$row[preco], data cadastro: $row[dataCadastro], data compra: $row[dataCompra], numero nota fiscal: $row[n_notaFiscal], quantidade em estoque: $row[quantidade_estoque], preco de compra(un): $row[preco_compra_un] <br></p>";
          while ($row = $result->fetch_assoc()) {
             echo "id: = $row[id_sabor], sabor: $row[sabor], lote: $row[lote], preço:$row[preco], data cadastro: $row[dataCadastro], data compra: $row[dataCompra], numero nota fiscal: $row[n_notaFiscal], quantidade em estoque: $row[quantidade_estoque], preco de compra(un): $row[preco_compra_un] <br>";
         }

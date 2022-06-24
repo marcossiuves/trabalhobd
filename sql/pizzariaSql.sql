@@ -48,15 +48,6 @@ CREATE TRIGGER estoque_update_check BEFORE UPDATE ON estoquePizza
      END
 $$
 
-CREATE TRIGGER estoque_check BEFORE INSERT ON estoquePizza 
-     FOR EACH ROW 
-     BEGIN 
-     IF NEW.quantidade_estoque<0 THEN 
-        SET NEW.quantidade_estoque = null;
-     END IF; 
-     END
-$$
-
 CREATE TABLE historicoCompra(
 	id_historico int primary key auto_increment,
 	fk_id_usuario int not null,
